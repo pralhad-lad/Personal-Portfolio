@@ -19,7 +19,7 @@ export default function HeroSection() {
       </h1>
 
       <p className="text-gray-300 max-w-xl text-sm md:text-base mb-8">
-        I'm a passionate frontend developer specializing in React, Next.js, and Tailwind CSS, aiming to create beautiful and performant user experiences.
+        I am a passionate frontend developer specializing in React, Next.js, and Tailwind CSS, aiming to create beautiful and performant user experiences.
       </p>
 
       <div className="flex gap-4 flex-wrap justify-center">

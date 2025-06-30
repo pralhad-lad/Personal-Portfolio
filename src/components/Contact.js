@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <section className="py-16 px-6 scroll-mt-28" id="contact">
       <div className="text-center mb-12">
-        <p className="text-sm text-purple-400 mb-2">Let's Work Together</p>
+        <p className="text-sm text-purple-400 mb-2">Lets Work Together</p>
         <h2 className="text-4xl font-bold bg-gradient-to-r from-fuchsia-500 to-indigo-400 bg-clip-text text-transparent">
           Get In Touch
         </h2>
