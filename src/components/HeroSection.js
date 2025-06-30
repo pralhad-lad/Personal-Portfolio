@@ -12,7 +12,7 @@ export default function HeroSection() {
       />
 
       <h1 className="text-3xl md:text-5xl font-bold mb-4">
-        I'm
+        I am
         <span className="bg-gradient-to-r from-fuchsia-500 via-purple-500 to-indigo-500 bg-clip-text text-transparent">
           {" "}Pralhad Lad
         </span>, Frontend Developer based in India
