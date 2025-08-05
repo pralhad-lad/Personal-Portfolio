@@ -17,6 +17,7 @@ export default function Navbar() {
           <li><Link href="#about" className="hover:text-pink-400">About Me</Link></li>
           <li><Link href="#skills" className="hover:text-pink-400">Skills & Experience</Link></li>
           <li><Link href="#projects" className="hover:text-pink-400">Projects</Link></li>
+          <li><Link href="#UI/UX" className="hover:text-pink-400">UI/UX Work</Link></li>
           <li><Link href="#resume" className="hover:text-pink-400">Resume</Link></li>
           <li><Link href="#contact" className="hover:text-pink-400">Contact</Link></li>
         </ul>

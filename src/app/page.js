@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
 import SkillsExperience from "@/components/SkillsExperience";
+import UiuxWorkSection from "@/components/UiuxWorkSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <SkillsExperience />
       <Projects />
+      <UiuxWorkSection/>
       <Resume />
       <Contact />
     </main>
