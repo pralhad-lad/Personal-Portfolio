@@ -1,45 +1,131 @@
 import Image from "next/image";
 
-export default function About() {
+export default function SkillsExperience() {
   return (
-    <section className="py-16 px-6 scroll-mt-28" id="about">
-      <div className="max-w-6xl mx-auto backdrop-blur-md bg-white/5 p-8 rounded-xl border border-white/10">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          About
-          <span className="bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent"> Me</span>
-        </h2>
+    <section className="text-white py-12 px-6 scroll-mt-28" id="skills">
+      <h2 className="text-4xl font-bold text-center mb-12">
+        Skills &{" "}
+        <span className="bg-gradient-to-r from-fuchsia-500 to-indigo-400 bg-clip-text text-transparent">
+          Experience
+        </span>
+      </h2>
 
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="w-60 h-70 relative overflow-hidden">
-            <Image
-              src="/images/profile.jpg"
-              alt="profile image"
-              width={300}
-              height={300}
-              className="object-cover rounded-full border-4 border-pink-500"
-            />
-          </div>
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
 
-          <div className="flex-1">
-            <h1 className="text-3xl font-bold">Pralhad Pravin Lad</h1>
-            <h2 className="text-xl mt-2 text-purple-400">Frontend Developer | Full Stack Developer</h2>
-
-            <div className="flex flex-wrap gap-2 mt-4 text-sm">
-              {[
-                "HTML5", "CSS3", "JavaScript", "ReactJs", "TypeScript", "NodeJs", "ExpressJs",
-                "Tailwind CSS", "NextJs", "SQL", "MongoDB", "Git", "GitHub", "Jenkins", "Docker", "GitLab",
-              ].map((skill) => (
-                <span key={skill} className="bg-purple-600 px-3 py-1 rounded-full">
-                  {skill}
-                </span>
-              ))}
-            </div>
-
-            <p className="mt-6 text-gray-300">
-              Frontend Developer with 2+ years of experience building responsive and scalable web applications using React.js, Next.js, TypeScript, and Tailwind CSS. Proficient in modern UI development, state management with Redux Toolkit, and build tools like Vite and Webpack. Hands-on experience with CI/CD tools including GitHub, Jenkins (basic), Docker, and GitLab, contributing to DevOps-aware frontend development.Skilled in integrating APIs and working with backend technologies like Node.js, Express.js, and MongoDB for full-stack project development. Strong understanding of SQL and database design. Experienced in converting Figma and Framer designs into pixel-perfect, production-ready UIs. Developed multiple real-world projects such as a Portfolio Website, Netflix Clone, and Grocery App, with clean code and modern best practices.
-            </p>
+        {/* Frontend Development */}
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow w-full">
+          <h3 className="text-xl font-bold text-purple-300 mb-4">Frontend Development</h3>
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
+            {[
+              { name: "HTML5", img: "html.png" },
+              { name: "CSS3", img: "css.webp" },
+              { name: "JavaScript", img: "js.jpeg" },
+              { name: "TypeScript", img: "ts.png" },
+              { name: "ReactJS", img: "react.png" },
+              { name: "NextJS", img: "nextjs.png" },
+              { name: "Tailwind CSS", img: "tailwind.png" },
+              { name: "Bootstrap", img: "bootstrap.jpeg" },
+              { name: "Redux Toolkit", img: "redux.png" },
+              { name: "JSON", img: "json.png" },
+              { name: "AJAX", img: "ajax.png" },
+            ].map(({ name, img }) => (
+              <div key={name} className="flex flex-col items-center">
+                <Image src={`/images/${img}`} alt={name} width={40} height={40} />
+                <span className="text-sm mt-2 text-center">{name}</span>
+              </div>
+            ))}
           </div>
         </div>
+
+        {/* Backend & Database */}
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow w-full">
+          <h3 className="text-xl font-bold text-purple-300 mb-4">Backend & Database</h3>
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
+            {[
+              { name: "NodeJS", img: "node.png" },
+              { name: "ExpressJS", img: "express.png" },
+              { name: "MongoDB", img: "mongo.jpeg" },
+              { name: "SQL", img: "sql.png" },
+            ].map(({ name, img }) => (
+              <div key={name} className="flex flex-col items-center">
+                <Image src={`/images/${img}`} alt={name} width={40} height={40} />
+                <span className="text-sm mt-2">{name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* DevOps Tools */}
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow w-full">
+          <h3 className="text-xl font-bold text-purple-300 mb-4">DevOps Tools</h3>
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
+            {[
+              { name: "Git", img: "git.png" },
+              { name: "GitHub", img: "github.png" },
+              { name: "GitLab", img: "gitlab.png" },
+              { name: "Docker", img: "docker.png" },
+              { name: "Jenkins", img: "jenkins.jpeg" },
+              { name: "Vite", img: "vite.jpeg" },
+              { name: "Webpack", img: "webpack.png" },
+            ].map(({ name, img }) => (
+              <div key={name} className="flex flex-col items-center">
+                <Image src={`/images/${img}`} alt={name} width={40} height={40} />
+                <span className="text-sm mt-2">{name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Testing & Others */}
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow w-full">
+          <h3 className="text-xl font-bold text-purple-300 mb-4">Testing & Other Technologies</h3>
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-6">
+            {[
+              { name: "Jest", img: "jest.png" },
+              { name: "Figma", img: "figma.jpeg" },
+              { name: "Framer", img: "framer.jpeg" },
+              { name: "AWS", img: "aws.jpeg" },
+              { name: "Linux", img: "linux.jpeg" },
+            ].map(({ name, img }) => (
+              <div key={name} className="flex flex-col items-center">
+                <Image src={`/images/${img}`} alt={name} width={40} height={40} />
+                <span className="text-sm mt-2">{name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Experience Section */}
+        <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow col-span-1 md:col-span-2 w-full">
+          <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
+            <div className="w-24 md:w-32">
+              <Image
+                src="/images/wipro.jpeg"
+                alt="Wipro"
+                width={400}
+                height={400}
+                className="object-contain w-full h-auto"
+              />
+            </div>
+
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold">Wipro</h3>
+              <p className="text-sm text-purple-300 font-medium bg-white/10 inline-block px-3 py-1 rounded-full mt-2 mb-4">
+                Dec 2021 – Jul 2024
+              </p>
+              <ul className="list-disc pl-5 text-gray-300 text-sm space-y-2">
+                <li>Contributed to Oracle Applications using TOAD and SQL for enterprise data handling.</li>
+                <li>Designed UI prototypes in Figma and implemented responsive components using React, Tailwind CSS, and TypeScript.</li>
+                <li>Improved UI responsiveness by 30% by optimizing layouts and interactions using modern CSS (Flexbox, Grid).</li>
+                <li>Developed scalable frontend architecture with Redux Toolkit for better state management.</li>
+                <li>Implemented DevOps workflows with Git, GitHub, GitLab, Jenkins (basic), and Docker to support CI/CD pipelines.</li>
+                <li>Acquired backend knowledge in Node.js, Express.js, and MongoDB to support full-stack integration.</li>
+                <li>Proactively learned frontend development outside of core Oracle stream, aligning with modern web standards.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   );
