@@ -49,6 +49,19 @@ const projects = [
     github: "https://github.com/pralhad-lad/News-App.git",
     demo: "",
   },
+  {
+      title: "Blog App",
+      image: "/images/blog.png",
+      description: "A full-stack blogging platform with an integrated admin panel for content management, user engagement, and dynamic blog display. Designed for SEO optimization, responsive design, and secure operations with a smooth reading and publishing experience.",
+      bullets: [
+        "Admin Panel for Content Management – Add, edit, and manage blogs with images, titles, descriptions, and category selection; supports <p>, <h1>, <h2>, <h3> tags for rich formatting.",
+        "Dynamic Blog Pages – Displays blog title, featured image, author photo, author name, and complete blog content with responsive layout.",
+        "Email Subscription Management – Admin can view and manage the email subscription list to engage readers directly.",
+        "Full-Stack Implementation – Built with Next.js, Node.js, Express.js, and MongoDB; includes secure authentication, optimized images, and SEO-friendly rendering."
+      ],
+      github: "https://github.com/pralhad-lad/Blog-App.git",
+      demo: "",
+  },
 ];
 
 export default function Projects() {
