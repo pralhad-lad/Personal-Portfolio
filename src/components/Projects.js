@@ -62,6 +62,18 @@ const projects = [
       github: "https://github.com/pralhad-lad/Blog-App.git",
       demo: "",
   },
+  {
+    title: "CarRental App",
+    image: "/images/car.png",
+    description: "The Car Rental Platform is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that enables users to rent and list cars seamlessly. The system allows two types of users — regular users and car owners — to interact within a single platform.",
+    bullets: [
+      "- Developed a role-based car rental system with dashboard analytics showing total cars, bookings, revenue, and recent activity.",
+      "- Implemented car management and booking management features allowing users to add, edit, and update car details and booking statuses.",
+      "- Built using React.js, Tailwind CSS, Node.js, Express.js, and MongoDB with secure JWT authentication and dynamic data rendering."
+    ],
+    github: "https://github.com/pralhad-lad/CarRental.git",
+    demo: ""
+  }
 ];
 
 export default function Projects() {
