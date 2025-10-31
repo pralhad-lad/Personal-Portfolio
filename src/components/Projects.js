@@ -50,46 +50,49 @@ const projects = [
     demo: "",
   },
   {
-      title: "Blog App",
-      image: "/images/blog.png",
-      description: "A full-stack blogging platform with an integrated admin panel for content management, user engagement, and dynamic blog display. Designed for SEO optimization, responsive design, and secure operations with a smooth reading and publishing experience.",
-      bullets: [
-        "Admin Panel for Content Management – Add, edit, and manage blogs with images, titles, descriptions, and category selection; supports <p>, <h1>, <h2>, <h3> tags for rich formatting.",
-        "Dynamic Blog Pages – Displays blog title, featured image, author photo, author name, and complete blog content with responsive layout.",
-        "Email Subscription Management – Admin can view and manage the email subscription list to engage readers directly.",
-        "Full-Stack Implementation – Built with Next.js, Node.js, Express.js, and MongoDB; includes secure authentication, optimized images, and SEO-friendly rendering."
-      ],
-      github: "https://github.com/pralhad-lad/Blog-App.git",
-      demo: "",
+    title: "Blog App",
+    image: "/images/blog.png",
+    description: "A full-stack blogging platform with an integrated admin panel for content management, user engagement, and dynamic blog display. Designed for SEO optimization, responsive design, and secure operations with a smooth reading and publishing experience.",
+    bullets: [
+      "Admin Panel for Content Management – Add, edit, and manage blogs with images, titles, descriptions, and category selection; supports <p>, <h1>, <h2>, <h3> tags for rich formatting.",
+      "Dynamic Blog Pages – Displays blog title, featured image, author photo, author name, and complete blog content with responsive layout.",
+      "Email Subscription Management – Admin can view and manage the email subscription list to engage readers directly.",
+      "Full-Stack Implementation – Built with Next.js, Node.js, Express.js, and MongoDB; includes secure authentication, optimized images, and SEO-friendly rendering."
+    ],
+    github: "https://github.com/pralhad-lad/Blog-App.git",
+    demo: "",
   },
   {
     title: "CarRental App",
     image: "/images/car.png",
-    description: "The Car Rental Platform is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that enables users to rent and list cars seamlessly. The system allows two types of users — regular users and car owners — to interact within a single platform.",
+    description: "The Car Rental System is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js) that enables users to rent cars and manage their listings from a personalized dashboard. Once logged in, users can view a detailed dashboard displaying key metrics such as total cars, total bookings, pending and confirmed bookings, recent booking data, and monthly revenue.",
     bullets: [
-      "- Developed a role-based car rental system with dashboard analytics showing total cars, bookings, revenue, and recent activity.",
-      "- Implemented car management and booking management features allowing users to add, edit, and update car details and booking statuses.",
-      "- Built using React.js, Tailwind CSS, Node.js, Express.js, and MongoDB with secure JWT authentication and dynamic data rendering."
+      "Interactive User Dashboard – Displays total cars, total bookings, pending and confirmed bookings, recent booking history, and monthly revenue insights in clean, informative boxes.",
+      "Car Management Module – Allows users to add new cars with brand, model, year, daily price, fuel type, description, and image; supports edit and delete operations for uploaded cars.",
+      "Booking Management – Users can view all booking requests and update their status from Pending to Confirmed, ensuring complete control over rental operations.",
+      "Dynamic Data Visualization – Real-time dashboard updates using MongoDB data for bookings, cars, and earnings overview.",
+      "Role-Based Access – Secure login system ensures only authenticated users can post cars, view dashboards, or manage bookings.",
+      "Full-Stack Integration – Built using React.js, Node.js, Express.js, and MongoDB with responsive Tailwind CSS UI and protected RESTful APIs."
     ],
-    github: "https://github.com/pralhad-lad/CarRental.git",
-    demo: ""
-  }
+      github: "https://github.com/pralhad-lad/Blog-App.git",
+    demo: "",
+  },
+
 ];
 
 export default function Projects() {
   return (
     <section className=" text-white py-16 px-6 scroll-mt-28" id="projects">
       <h2 className="text-4xl font-bold text-center mb-12">Proj
-                <span className="bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent">ects</span>
-            </h2>
+        <span className="bg-gradient-to-r from-pink-500 to-orange-400 bg-clip-text text-transparent">ects</span>
+      </h2>
 
       <div className="max-w-6xl mx-auto space-y-20">
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`flex flex-col md:flex-row items-center gap-8 ${
-              index % 2 !== 0 ? "md:flex-row-reverse" : ""
-            }`}
+            className={`flex flex-col md:flex-row items-center gap-8 ${index % 2 !== 0 ? "md:flex-row-reverse" : ""
+              }`}
           >
             {/* Image */}
             <div className="md:w-1/2">
