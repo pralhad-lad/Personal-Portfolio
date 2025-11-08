@@ -77,6 +77,24 @@ const projects = [
       github: "https://github.com/pralhad-lad/Blog-App.git",
     demo: "",
   },
+   {
+  title: "Imagify – AI Image Generator",
+  image: "/images/imagify.png",
+  description:
+    "Imagify is a full-stack AI image generation platform that allows users to create high-quality images based on text prompts. Built using the MERN stack and integrated with AI APIs, it allows users to securely generate, download, and manage their AI-generated images. Users can access their prompt history, manage credits, and explore responsive UI components for a smooth creative workflow.",
+  bullets: [
+    "AI-Powered Image Generation – Users generate stunning images by entering text prompts, powered by AI APIs.",
+    "User Authentication – Secure login system enabling only registered users to generate images and manage profiles.",
+    "Credit-Based System – Every user gets credits; generating an image reduces credit count, with a Buy Credits button to purchase more.",
+    "Download Image Support – Users can directly download generated images to their device.",
+    "Responsive UI – Fully responsive interface with modern components ensuring smooth usage on any device.",
+    "Backend APIs – RESTful server handles prompt generation requests, authentication, credit deductions, and user data.",
+    "Modern Tech Stack – Built using React.js, Node.js, Express.js, MongoDB with Tailwind CSS for elegant UI."
+  ],
+
+  github: "https://github.com/pralhad-lad/Text-to-Image.git",
+  demo: "",
+}
 
 ];
 
