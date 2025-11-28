@@ -94,7 +94,27 @@ const projects = [
 
   github: "https://github.com/pralhad-lad/Text-to-Image.git",
   demo: "",
+},
+{
+  title: "AI-Resume Builder",
+  image: "/images/resume.png",
+  description:
+    "Resume-Builder is a full-stack resume creation platform that enables users to build, customize, preview, and export professional resumes with real-time editing. Built with the MERN stack, it supports user authentication, image uploads, secure data storage, and dynamic resume sections for a seamless workflow. Users can manage multiple resumes, personalize templates, and download print-ready PDF resumes.",
+  bullets: [
+    "Dynamic Resume Builder – Real-time editing and live preview of resume content with customizable sections.",
+    "User Authentication – Secure JWT-based login and signup, enabling users to save and manage multiple resumes.",
+    "Image Upload Support – Upload and preview profile photos using Multer and ImageKit integration.",
+    "Professional PDF Export – Generate print-ready PDF resumes directly from the browser.",
+    "Responsive UI – Modern, clean and adaptive interface built with Tailwind CSS for smooth user experience.",
+    "Backend APIs – CRUD operations for resume data, authentication, uploads and data persistence via Express backend.",
+    "Modern Tech Stack – Built using React.js, Node.js, Express.js, MongoDB with secure environment configuration.",
+    "AI-Assisted Content – Optional OpenAI integration to generate experience bullet points and descriptions."
+  ],
+
+  github: "https://github.com/pralhad-lad/Resume-builder-AI.git",
+  demo: "",
 }
+
 
 ];
 
